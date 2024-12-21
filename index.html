@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <h1>Level <span id="scoreDisplay">0</span></h1>
+    <div class="game-container">
+      <div class="tile green" data-tile="green"></div>
+      <div class="tile red" data-tile="red"></div>
+      <div class="tile yellow" data-tile="yellow"></div>
+      <div class="tile blue" data-tile="blue"></div>
+    </div>
+    <div class="controls">
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="gameOverModal">
+      <div class="modal-content">
+        <h2>Game Over!</h2>
+        <p>Level reached: <span id="finalScore">0</span></p>
+        <button id="playAgainBtn">Play Again</button>
+      </div>
+    </div>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
